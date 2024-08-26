@@ -1276,7 +1276,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 80.01) (xy 219.71 80.01)
+			(xy 250.19 80.01) (xy 243.84 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1306,7 +1306,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 111.76) (xy 219.71 111.76)
+			(xy 250.19 111.76) (xy 243.84 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1356,7 +1356,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 82.55) (xy 219.71 82.55)
+			(xy 250.19 82.55) (xy 243.84 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1376,7 +1376,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 80.01) (xy 205.74 80.01)
+			(xy 236.22 80.01) (xy 205.74 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1426,7 +1426,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 111.76) (xy 205.74 111.76)
+			(xy 236.22 111.76) (xy 205.74 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1456,7 +1456,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 82.55) (xy 205.74 82.55)
+			(xy 236.22 82.55) (xy 205.74 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1626,7 +1626,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 109.22) (xy 205.74 109.22)
+			(xy 236.22 109.22) (xy 205.74 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1676,7 +1676,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 109.22) (xy 219.71 109.22)
+			(xy 250.19 109.22) (xy 243.84 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1756,7 +1756,7 @@
 	)
 	(hierarchical_label "Seconds_ones"
 		(shape input)
-		(at 226.06 80.01 0)
+		(at 250.19 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1780,7 +1780,7 @@
 	)
 	(hierarchical_label "Minutes_ones"
 		(shape input)
-		(at 226.06 109.22 0)
+		(at 250.19 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1792,7 +1792,7 @@
 	)
 	(hierarchical_label "Minutes_tens"
 		(shape input)
-		(at 226.06 111.76 0)
+		(at 250.19 111.76 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1840,7 +1840,7 @@
 	)
 	(hierarchical_label "Seconds_tens"
 		(shape input)
-		(at 226.06 82.55 0)
+		(at 250.19 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1918,7 +1918,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 215.9 109.22 90)
+		(at 240.03 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1926,7 +1926,7 @@
 		(dnp no)
 		(uuid "0ceb2a7a-51be-4164-aa0b-60e09a36e8f4")
 		(property "Reference" "R203"
-			(at 213.36 108.966 90)
+			(at 237.49 108.966 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,7 +1935,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 213.868 109.22 90)
+			(at 237.998 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1944,7 +1944,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 215.9 110.998 90)
+			(at 240.03 110.998 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1953,7 +1953,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 109.22 0)
+			(at 240.03 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1962,7 +1962,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 215.9 109.22 0)
+			(at 240.03 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1980,133 +1980,6 @@
 			(project "digital_klokke"
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
 					(reference "R203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Optoelectronics:LTD-4608JF")
-		(at 199.39 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "17bc89b9-163f-4521-a0f8-fd3fedd20265")
-		(property "Reference" "D202"
-			(at 196.85 95.0425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LTD-4608JF"
-			(at 196.85 97.4668 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 98.044 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS30-2001-317/D4608JF.pdf"
-			(at 190.5 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Display Modules - LED Character and Numeric Orange-Yellow 7-Segment 2 Character Common Anode 2.05V 20mA 0.504\" H x 0.782\" W x 0.276\" D (12.80mm x 19.86mm x 7.00mm) 10-DIP (0.400\", 10.16mm)"
-			(at 190.5 132.334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "digikey_partnumber" "160-1536-5-ND"
-			(at 190.246 125.222 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Common pin" "Common Anode "
-			(at 190.246 127.508 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vf" "2.05V "
-			(at 190.5 129.794 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "907d3678-e474-4b96-ba6b-4cdd59afc6bc")
-		)
-		(pin "6"
-			(uuid "30ef1fd0-cd31-4f4e-a6b0-774e28ea22e8")
-		)
-		(pin "2"
-			(uuid "6fd46296-4eac-4ec0-ade1-38e3c55ccf9a")
-		)
-		(pin "8"
-			(uuid "82fb48a3-bfd8-4965-9166-0c3a889a9492")
-		)
-		(pin "10"
-			(uuid "2287b28c-99c4-4238-98a9-74775924b12e")
-		)
-		(pin "4"
-			(uuid "915c416a-0276-4b11-adcb-75f989030dd0")
-		)
-		(pin "3"
-			(uuid "4e0185de-5bb7-42fd-a248-09830d22e8a5")
-		)
-		(pin "5"
-			(uuid "65226ecc-adb6-43b2-9ae1-40a03bfc7280")
-		)
-		(pin "7"
-			(uuid "cf81289d-5a97-48a7-a8dd-899b1767b5d4")
-		)
-		(pin "1"
-			(uuid "a133de51-e940-45e2-8ac9-1da8715f5e99")
-		)
-		(instances
-			(project "digital_klokke"
-				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
-					(reference "D202")
 					(unit 1)
 				)
 			)
@@ -2204,7 +2077,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OMG_Optoelectronics:Lite-On LTD-4608JF"
 			(at 199.39 68.834 0)
 			(effects
 				(font
@@ -2551,7 +2424,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 215.9 80.01 90)
+		(at 240.03 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2559,7 +2432,7 @@
 		(dnp no)
 		(uuid "98496c7d-7d6a-4369-a45c-1c4cb353fd29")
 		(property "Reference" "R201"
-			(at 213.36 79.756 90)
+			(at 237.49 79.756 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,7 +2441,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 213.868 80.01 90)
+			(at 237.998 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2577,7 +2450,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 215.9 81.788 90)
+			(at 240.03 81.788 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2586,7 +2459,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 80.01 0)
+			(at 240.03 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,7 +2468,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 215.9 80.01 0)
+			(at 240.03 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2619,8 +2492,135 @@
 		)
 	)
 	(symbol
+		(lib_id "Optoelectronics:LTD-4608JF")
+		(at 199.39 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a46b5144-fe82-492f-a646-594d9fdac60a")
+		(property "Reference" "D202"
+			(at 196.85 95.0425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTD-4608JF"
+			(at 196.85 97.4668 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OMG_Optoelectronics:Lite-On LTD-4608JF"
+			(at 199.39 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS30-2001-317/D4608JF.pdf"
+			(at 190.5 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Display Modules - LED Character and Numeric Orange-Yellow 7-Segment 2 Character Common Anode 2.05V 20mA 0.504\" H x 0.782\" W x 0.276\" D (12.80mm x 19.86mm x 7.00mm) 10-DIP (0.400\", 10.16mm)"
+			(at 190.5 132.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "digikey_partnumber" "160-1536-5-ND"
+			(at 190.246 125.222 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Common pin" "Common Anode "
+			(at 190.246 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vf" "2.05V "
+			(at 190.5 129.794 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "f65bb14b-58d0-41d2-856f-6bdfcc44f0f8")
+		)
+		(pin "6"
+			(uuid "54705387-325a-4702-97c5-2d3500a37a63")
+		)
+		(pin "2"
+			(uuid "50b73602-057f-41dc-a6da-9d9aebc2eb23")
+		)
+		(pin "8"
+			(uuid "361ef443-aaf7-4d9f-94cc-f30be36cca80")
+		)
+		(pin "10"
+			(uuid "01022d8b-2bb8-4780-b3ee-db1dc56a390b")
+		)
+		(pin "4"
+			(uuid "6cde6596-799e-4aeb-a3bb-099dcbbbaf93")
+		)
+		(pin "3"
+			(uuid "a81b0fef-53e0-42b3-ba09-7d0c08c86800")
+		)
+		(pin "5"
+			(uuid "1f0bdaa8-4990-431a-9ae3-5b0546c7ffb0")
+		)
+		(pin "7"
+			(uuid "514d641b-a980-447e-9130-57a37acd608a")
+		)
+		(pin "1"
+			(uuid "dfa2d5f1-dfb8-4d37-8a14-6e094d7872f4")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "D202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 215.9 82.55 90)
+		(at 240.03 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2628,7 +2628,7 @@
 		(dnp no)
 		(uuid "bdf4d445-e71f-469d-83f7-5aa03c68ddb3")
 		(property "Reference" "R202"
-			(at 213.36 82.296 90)
+			(at 237.49 82.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2637,7 +2637,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 213.868 82.55 90)
+			(at 237.998 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,7 +2646,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 215.9 84.328 90)
+			(at 240.03 84.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2655,7 +2655,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 82.55 0)
+			(at 240.03 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,7 +2664,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 215.9 82.55 0)
+			(at 240.03 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2689,7 +2689,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 215.9 111.76 90)
+		(at 240.03 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2697,7 +2697,7 @@
 		(dnp no)
 		(uuid "c157a5cf-f3f6-4549-afe9-ec65a67eb36e")
 		(property "Reference" "R204"
-			(at 213.36 111.506 90)
+			(at 237.49 111.506 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,7 +2706,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 213.868 111.76 90)
+			(at 237.998 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,7 +2715,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 215.9 113.538 90)
+			(at 240.03 113.538 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +2724,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 111.76 0)
+			(at 240.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2733,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 215.9 111.76 0)
+			(at 240.03 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)

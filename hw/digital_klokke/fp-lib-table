@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "OMG_Switches")(type "KiCad")(uri "${KIPRJMOD}/footprint/Switches.pretty")(options "")(descr ""))
   (lib (name "OMG_Drivers")(type "KiCad")(uri "${KIPRJMOD}/footprint/drivers.pretty")(options "")(descr ""))
+  (lib (name "OMG_Optoelectronics")(type "KiCad")(uri "${KIPRJMOD}/footprint/Optoelectronics.pretty")(options "")(descr ""))
 )
