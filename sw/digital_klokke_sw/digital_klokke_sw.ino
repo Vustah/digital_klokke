@@ -30,8 +30,8 @@ SegmentState segment_state = s_ones;
 // unsigned char segment_state = s_ones;
 
 int second_counter = 0;
-int minute_counter = 56;
-int hour_counter = 18;
+int minute_counter = 0;
+int hour_counter = 11;
 int prev_time;
 int current_time;
 
@@ -69,7 +69,7 @@ void loop() {
   current_time = millis();
   time_difference = current_time - prev_time;
 
-  if (time_difference >= 1000) {
+  if (time_difference >= 999) {
     prev_time = current_time;
     second_counter += 1;
     //tick seconds
@@ -86,11 +86,13 @@ void loop() {
     if (hour_counter >= 24) {
       hour_counter = 0;
     }
-    // Serial.print(time_difference);
-    // Serial.print(" ");
-    // Serial.print(second_counter);
-    // Serial.print(" ");
-    // Serial.println(minute_counter);
+    Serial.print(time_difference);
+    Serial.print(" ");
+    Serial.print(hour_counter);
+    Serial.print(" ");
+    Serial.print(minute_counter);
+    Serial.print(" ");
+    Serial.println(second_counter);
   }
 }
 
