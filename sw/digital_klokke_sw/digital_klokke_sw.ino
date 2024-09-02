@@ -30,10 +30,12 @@ SegmentState segment_state = s_ones;
 // unsigned char segment_state = s_ones;
 
 int second_counter = 0;
-int minute_counter = 0;
-int hour_counter = 11;
+int minute_counter = 54;
+int hour_counter = 18;
 int prev_time;
 int current_time;
+
+
 
 void setup() {
   // pinMode(A, OUTPUT);
@@ -61,6 +63,7 @@ void setup() {
 }
 
 int time_difference;
+int acumulated_time_difference;
 
 void loop() {
   write_time(hour_counter, minute_counter);
@@ -86,7 +89,19 @@ void loop() {
     if (hour_counter >= 24) {
       hour_counter = 0;
     }
+
+    //Adjust timing due to incorrections in timing. 
+    if (time_difference!=1000){
+      acumulated_time_difference += time_difference-1000;
+    }
+    if(acumulated_time_difference>1000){
+      second_counter-=1;
+    }else if(acumulated_time_difference<-1000){
+      second_counter+=1;
+    }
     Serial.print(time_difference);
+    Serial.print(" ");
+    Serial.print(acumulated_time_difference);
     Serial.print(" ");
     Serial.print(hour_counter);
     Serial.print(" ");
