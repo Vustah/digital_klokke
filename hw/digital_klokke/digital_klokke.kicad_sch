@@ -6,8 +6,9 @@
 	(paper "A3")
 	(title_block
 		(title "Digital Klokke")
-		(date "2024-08-20")
+		(date "2024-09-02")
 		(rev "00")
+		(company "Noe Nonsens")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
@@ -1097,6 +1098,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -1712,6 +1795,12 @@
 		(uuid "7c2e7516-9676-4fdc-9b29-3b302cd2c3c6")
 	)
 	(junction
+		(at 168.91 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80a60174-2936-4424-b7c3-63ed08223bea")
+	)
+	(junction
 		(at 69.85 231.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1722,6 +1811,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea9b8c49-5ce6-468d-a04e-f4fe99301bdf")
+	)
+	(junction
+		(at 171.45 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5ac32e5-49ba-4b2a-ba87-38920e70d042")
 	)
 	(junction
 		(at 69.85 157.48)
@@ -1791,7 +1886,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 92.71) (xy 203.2 92.71)
+			(xy 186.69 92.71) (xy 228.6 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1871,7 +1966,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 58.42) (xy 171.45 59.69)
+			(xy 171.45 57.15) (xy 171.45 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2041,6 +2136,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 55.88) (xy 168.91 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a2b2451-faa7-46a2-b19d-765e0153a431")
+	)
+	(wire
+		(pts
 			(xy 86.36 157.48) (xy 69.85 157.48)
 		)
 		(stroke
@@ -2061,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 54.61) (xy 168.91 59.69)
+			(xy 168.91 54.61) (xy 168.91 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2171,6 +2276,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 92.71) (xy 228.6 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893581dc-d129-417e-b1d6-8a719188980d")
+	)
+	(wire
+		(pts
 			(xy 69.85 147.32) (xy 69.85 146.05)
 		)
 		(stroke
@@ -2188,6 +2303,16 @@
 			(type default)
 		)
 		(uuid "8d2babe2-66b1-46b3-9986-2b36f2bbad36")
+	)
+	(wire
+		(pts
+			(xy 228.6 82.55) (xy 231.14 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "911abdda-5aaf-4a7e-be9c-0bc991b2c50e")
 	)
 	(wire
 		(pts
@@ -2231,6 +2356,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 58.42) (xy 171.45 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b09d36b9-1576-4cc2-9b00-9993bc6ede6c")
+	)
+	(wire
+		(pts
 			(xy 69.85 231.14) (xy 86.36 231.14)
 		)
 		(stroke
@@ -2238,6 +2373,16 @@
 			(type default)
 		)
 		(uuid "b61ff362-25d8-4996-a806-a1da530bcb6e")
+	)
+	(wire
+		(pts
+			(xy 168.91 55.88) (xy 168.91 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b879d424-0012-4ec1-9900-e154c07ebef7")
 	)
 	(wire
 		(pts
@@ -2281,16 +2426,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 92.71) (xy 203.2 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7ea6172-6854-4378-af6f-732e6aa621c1")
-	)
-	(wire
-		(pts
 			(xy 226.06 88.9) (xy 266.7 88.9)
 		)
 		(stroke
@@ -2298,16 +2433,6 @@
 			(type default)
 		)
 		(uuid "d4e1638f-7a9a-4ee8-9154-9fbae4a80909")
-	)
-	(wire
-		(pts
-			(xy 203.2 111.76) (xy 203.2 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7f77fe5-8e1a-4dc9-8b40-bb63ddee94de")
 	)
 	(wire
 		(pts
@@ -2341,16 +2466,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 121.92) (xy 203.2 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee8215f4-704f-4dfc-bdbf-dcb173ca3f85")
-	)
-	(wire
-		(pts
 			(xy 143.51 85.09) (xy 161.29 85.09)
 		)
 		(stroke
@@ -2358,6 +2473,16 @@
 			(type default)
 		)
 		(uuid "effd2b77-c87d-4f55-8f0c-b029acc1eed4")
+	)
+	(wire
+		(pts
+			(xy 167.64 58.42) (xy 171.45 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f178c319-fdf0-40ab-98dc-45fd9022d3a3")
 	)
 	(wire
 		(pts
@@ -2646,6 +2771,75 @@
 		)
 		(uuid "fdb6a915-7b2c-4745-837d-07415b171c2a")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 176.53 55.88 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 0 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "37920536-6bbf-484a-aec9-6aa56258996c")
+		(property "Netclass" "POWER"
+			(at 180.086 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 167.64 58.42 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc49d8ac-71d8-49a4-a997-6ccbc3301c5c")
+		(property "Netclass" "POWER"
+			(at 164.084 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 167.64 55.88 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d92b8ac9-8d32-462e-b0a1-ef12b1d63e64")
+		(property "Netclass" "POWER"
+			(at 164.084 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 60.96 157.48 0)
@@ -2847,76 +3041,6 @@
 			(project ""
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8"
 					(reference "SW101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:CQY99")
-		(at 203.2 115.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22d6e190-ea2d-4763-8ead-173945fdb7e2")
-		(property "Reference" "D103"
-			(at 205.232 115.5008 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "green"
-			(at 205.232 117.9251 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 198.755 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 203.2 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3f1ed154-677f-4737-92e2-d98ca292f531")
-		)
-		(pin "1"
-			(uuid "e246d8e6-255c-4cdc-b39b-22393d006b94")
-		)
-		(instances
-			(project "digital_klokke"
-				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8"
-					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -3752,76 +3876,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 203.2 107.95 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "556b6104-216c-4cb3-83fe-1f3149c73a7e")
-		(property "Reference" "R107"
-			(at 204.978 106.7378 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "270"
-			(at 204.978 109.1621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 204.978 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 203.2 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80aa82b1-6d87-4224-a595-f4de98c71811")
-		)
-		(pin "2"
-			(uuid "6508665f-6051-41b8-9278-4707bce1a5c7")
-		)
-		(instances
-			(project "digital_klokke"
-				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8"
-					(reference "R107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 74.93 53.34 0)
 		(unit 1)
@@ -4232,6 +4286,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 162.56 209.55 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8677ac31-1376-4809-a62d-6571c9135d7c")
+		(property "Reference" "H102"
+			(at 165.1 208.3378 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 165.1 210.7621 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 162.56 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 162.56 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 60.96 0)
 		(unit 1)
@@ -4434,74 +4552,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 203.2 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a7bfcb73-f71c-43d8-b5ba-0e3668dbbfc9")
-		(property "Reference" "#PWR0120"
-			(at 203.2 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 203.2 126.0531 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c7cb9bb-155b-4a65-af0d-8caa5304dea5")
-		)
-		(instances
-			(project "digital_klokke"
-				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8"
-					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
-		(at 171.45 58.42 0)
+		(at 171.45 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4510,7 +4562,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad70bba0-49b2-42b6-80b0-ec546d4eb2e7")
 		(property "Reference" "#PWR0104"
-			(at 171.45 62.23 0)
+			(at 171.45 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +4571,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 171.45 54.2869 0)
+			(at 171.45 53.0169 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4527,7 +4579,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 58.42 0)
+			(at 171.45 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4536,7 +4588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 58.42 0)
+			(at 171.45 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +4597,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 171.45 58.42 0)
+			(at 171.45 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4902,6 +4954,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 162.56 204.47 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db5e83c9-82fa-4062-a4bf-b254dcf8da05")
+		(property "Reference" "H101"
+			(at 165.1 203.2578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 165.1 205.6821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 162.56 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 162.56 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9V")
 		(at 176.53 54.61 0)
 		(unit 1)
@@ -5105,7 +5221,7 @@
 	)
 	(sheet
 		(at 231.14 69.85)
-		(size 29.21 12.7)
+		(size 29.21 15.24)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5126,7 +5242,7 @@
 			)
 		)
 		(property "Sheetfile" "seven_segment.kicad_sch"
-			(at 231.14 83.1346 0)
+			(at 231.14 85.6746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,6 +5329,16 @@
 				(justify right)
 			)
 			(uuid "2a4697bf-8be6-4f69-ab1b-b4f8d48f9373")
+		)
+		(pin "nDP" input
+			(at 231.14 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d1c1e367-169d-4253-a8e2-092f6cc37640")
 		)
 		(instances
 			(project "digital_klokke"

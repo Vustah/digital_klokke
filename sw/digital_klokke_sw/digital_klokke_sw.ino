@@ -4,10 +4,10 @@
 #define Second_tens 6
 #define Minute_ones 9
 #define Minute_tens 7
+#define config_led 10
 #define increase_time A0
 #define decrease_time A1
 #define adjust A2
-#define config_led 10
 #define increase_pin A0
 #define decrease_pin A1
 #define adjust_pin A2
@@ -30,11 +30,11 @@ SegmentState segment_state = s_ones;
 // unsigned char segment_state = s_ones;
 
 int second_counter = 0;
-int minute_counter = 54;
-int hour_counter = 18;
+int minute_counter = 29;
+int hour_counter = 20;
 int prev_time;
 int current_time;
-
+bool config_led_state = true;
 
 
 void setup() {
@@ -75,6 +75,7 @@ void loop() {
   if (time_difference >= 999) {
     prev_time = current_time;
     second_counter += 1;
+    seconds_counter();
     //tick seconds
     if (second_counter >= 60) {
       minute_counter += 1;
@@ -90,14 +91,16 @@ void loop() {
       hour_counter = 0;
     }
 
-    //Adjust timing due to incorrections in timing. 
-    if (time_difference!=1000){
-      acumulated_time_difference += time_difference-1000;
+    //Adjust timing due to incorrections in timing.
+    if (time_difference != 1000) {
+      acumulated_time_difference += time_difference - 1000;
     }
-    if(acumulated_time_difference>1000){
-      second_counter-=1;
-    }else if(acumulated_time_difference<-1000){
-      second_counter+=1;
+    if (acumulated_time_difference > 1000) {
+      second_counter -= 1;
+      acumulated_time_difference -= 1000;
+    } else if (acumulated_time_difference < -1000) {
+      second_counter += 1;
+      acumulated_time_difference += 1000;
     }
     Serial.print(time_difference);
     Serial.print(" ");
@@ -112,11 +115,19 @@ void loop() {
 }
 
 
+void seconds_counter() {
+  config_led_state = !(config_led_state);
+  if (config_led_state) {
+    analogWrite(config_led, 230);
+  } else {
+    analogWrite(config_led, 255);
+  }
+}
+
 int minute_ones_display, minute_tens_display;
 int hour_ones_display, hour_tens_display;
 
-
-void send_number_to_converter(int number[4]){
+void send_number_to_converter(int number[4]) {
   for (int i = 0; i < 4; i++) {
     digitalWrite(SegBit[i], number[i]);
   }
@@ -136,8 +147,8 @@ void write_time(int hour, int minute) {
   digitalWrite(Minute_tens, LOW);
 
   int SegWrite[4];
-  
-  // Turn on the right segment with right value. 
+
+  // Turn on the right segment with right value.
   switch (segment_state) {
     case s_ones:
       calcBinaryValue(minute_ones_display, &SegWrite[0]);
