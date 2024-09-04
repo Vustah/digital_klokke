@@ -21,17 +21,17 @@ void calcBinaryValue(int number, int* retNumber);
 
 int SegBit[4] = { 2, 5, 4, 3 };  //A,B,C,D
 
-enum SegmentState { m_ones,
-                    m_tens,
-                    s_ones,
-                    s_tens
+enum SegmentState { h_ones,
+                    h_tens,
+                    m_ones,
+                    m_tens
 };
-SegmentState segment_state = s_ones;
-// unsigned char segment_state = s_ones;
+SegmentState segment_state = m_ones;
+// unsigned char segment_state = m_ones;
 
 int second_counter = 0;
-int minute_counter = 29;
-int hour_counter = 20;
+int minute_counter = 30;
+int hour_counter = 19;
 int prev_time;
 int current_time;
 bool config_led_state = true;
@@ -66,7 +66,7 @@ int time_difference;
 int acumulated_time_difference;
 
 void loop() {
-  write_time(hour_counter, minute_counter);
+  write_time(hour_counter, minute_counter, second_counter);
 
   delay(5);
   current_time = millis();
@@ -75,7 +75,7 @@ void loop() {
   if (time_difference >= 999) {
     prev_time = current_time;
     second_counter += 1;
-    seconds_counter();
+
     //tick seconds
     if (second_counter >= 60) {
       minute_counter += 1;
@@ -95,11 +95,11 @@ void loop() {
     if (time_difference != 1000) {
       acumulated_time_difference += time_difference - 1000;
     }
-    if (acumulated_time_difference > 1000) {
-      second_counter -= 1;
-      acumulated_time_difference -= 1000;
-    } else if (acumulated_time_difference < -1000) {
+    if (acumulated_time_difference > 1000 && second_counter > 0) {
       second_counter += 1;
+      acumulated_time_difference -= 1000;
+    } else if (acumulated_time_difference < -1000 && second_counter < 59) {
+      second_counter -= 1;
       acumulated_time_difference += 1000;
     }
     Serial.print(time_difference);
@@ -118,7 +118,7 @@ void loop() {
 void seconds_counter() {
   config_led_state = !(config_led_state);
   if (config_led_state) {
-    analogWrite(config_led, 230);
+    analogWrite(config_led, 240);
   } else {
     analogWrite(config_led, 255);
   }
@@ -134,7 +134,7 @@ void send_number_to_converter(int number[4]) {
 }
 
 
-void write_time(int hour, int minute) {
+void write_time(int hour, int minute, int second) {
   minute_ones_display = minute % 10;
   minute_tens_display = minute / 10;
   hour_ones_display = hour % 10;
@@ -145,41 +145,59 @@ void write_time(int hour, int minute) {
   digitalWrite(Second_tens, LOW);
   digitalWrite(Minute_ones, LOW);
   digitalWrite(Minute_tens, LOW);
+  analogWrite(config_led, 255);
 
   int SegWrite[4];
 
   // Turn on the right segment with right value.
   switch (segment_state) {
-    case s_ones:
+    case m_ones:
       calcBinaryValue(minute_ones_display, &SegWrite[0]);
       send_number_to_converter(SegWrite);
+      if (second > 12) {
+        // seconds_counter();
+        analogWrite(config_led, 240);
+      }
       digitalWrite(Second_ones, HIGH);
-
-      segment_state = s_tens;
+      segment_state = m_tens;
       break;
-    case s_tens:
+
+    case m_tens:
       calcBinaryValue(minute_tens_display, &SegWrite[0]);
       send_number_to_converter(SegWrite);
+      if (second > 24) {
+        // seconds_counter();
+        analogWrite(config_led, 240);
+      }
       digitalWrite(Second_tens, HIGH);
+
+      segment_state = h_ones;
+      break;
+
+    case h_ones:
+      calcBinaryValue(hour_ones_display, &SegWrite[0]);
+      send_number_to_converter(SegWrite);
+      if (second > 36) {
+        // seconds_counter();
+        analogWrite(config_led, 240);
+      }
+      digitalWrite(Minute_ones, HIGH);
+
+      segment_state = h_tens;
+      break;
+    case h_tens:
+      calcBinaryValue(hour_tens_display, &SegWrite[0]);
+      send_number_to_converter(SegWrite);
+      if (second > 48) {
+        // seconds_counter();
+        analogWrite(config_led, 240);
+      }
+      digitalWrite(Minute_tens, HIGH);
 
       segment_state = m_ones;
       break;
-    case m_ones:
-      calcBinaryValue(hour_ones_display, &SegWrite[0]);
-      send_number_to_converter(SegWrite);
-      digitalWrite(Minute_ones, HIGH);
-
-      segment_state = m_tens;
-      break;
-    case m_tens:
-      calcBinaryValue(hour_tens_display, &SegWrite[0]);
-      send_number_to_converter(SegWrite);
-      digitalWrite(Minute_tens, HIGH);
-
-      segment_state = s_ones;
-      break;
     default:
-      segment_state = s_ones;
+      segment_state = m_ones;
       break;
   }
 }
