@@ -156,7 +156,7 @@ void write_time(int hour, int minute, int second) {
       send_number_to_converter(SegWrite);
       if (second > 12) {
         // seconds_counter();
-        analogWrite(config_led, 240);
+        analogWrite(config_led, 0);
       }
       digitalWrite(Second_ones, HIGH);
       segment_state = m_tens;
@@ -167,7 +167,7 @@ void write_time(int hour, int minute, int second) {
       send_number_to_converter(SegWrite);
       if (second > 24) {
         // seconds_counter();
-        analogWrite(config_led, 240);
+        analogWrite(config_led, 0);
       }
       digitalWrite(Second_tens, HIGH);
 
@@ -179,7 +179,7 @@ void write_time(int hour, int minute, int second) {
       send_number_to_converter(SegWrite);
       if (second > 36) {
         // seconds_counter();
-        analogWrite(config_led, 240);
+        analogWrite(config_led, 0);
       }
       digitalWrite(Minute_ones, HIGH);
 
@@ -190,7 +190,7 @@ void write_time(int hour, int minute, int second) {
       send_number_to_converter(SegWrite);
       if (second > 48) {
         // seconds_counter();
-        analogWrite(config_led, 240);
+        analogWrite(config_led, 0);
       }
       digitalWrite(Minute_tens, HIGH);
 
