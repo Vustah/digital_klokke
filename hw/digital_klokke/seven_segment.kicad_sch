@@ -1150,12 +1150,6 @@
 		(uuid "11622c9b-e591-45ea-84c5-e63250d02ec7")
 	)
 	(junction
-		(at 187.96 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "125ec896-f38e-4979-9347-f16245b3455c")
-	)
-	(junction
 		(at 124.46 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1178,6 +1172,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "667f3a60-4fde-425d-8f77-b53c98593f1a")
+	)
+	(junction
+		(at 196.85 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "975146d6-66f6-46e9-a2e2-2f55f4674dc7")
 	)
 	(junction
 		(at 184.15 116.84)
@@ -1211,7 +1211,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 151.13) (xy 179.07 151.13)
+			(xy 222.25 151.13) (xy 210.82 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1221,7 +1221,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 153.67) (xy 176.53 153.67)
+			(xy 222.25 153.67) (xy 210.82 153.67)
 		)
 		(stroke
 			(width 0)
@@ -1241,7 +1241,17 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 116.84) (xy 184.15 116.84)
+			(xy 203.2 146.05) (xy 184.15 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d6e7e9-0569-44ac-a8c8-b00c24572fb1")
+	)
+	(wire
+		(pts
+			(xy 222.25 116.84) (xy 210.82 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1281,27 +1291,27 @@
 	)
 	(wire
 		(pts
-			(xy 254 124.46) (xy 247.65 124.46)
+			(xy 203.2 156.21) (xy 173.99 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10c393cd-0643-405e-9968-fc2611df70b6")
+		(uuid "122cd3a6-ad2c-4906-adad-535925ed6e75")
 	)
 	(wire
 		(pts
-			(xy 187.96 134.62) (xy 189.23 134.62)
+			(xy 210.82 119.38) (xy 222.25 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1cdfd21a-ae3a-427c-8480-4209c7c2a31d")
+		(uuid "19958f93-4353-4b75-9408-abcc32c44051")
 	)
 	(wire
 		(pts
-			(xy 189.23 161.29) (xy 168.91 161.29)
+			(xy 222.25 161.29) (xy 210.82 161.29)
 		)
 		(stroke
 			(width 0)
@@ -1311,17 +1321,17 @@
 	)
 	(wire
 		(pts
-			(xy 254 156.21) (xy 247.65 156.21)
+			(xy 210.82 132.08) (xy 222.25 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26d10d28-4851-4b6c-b76a-d81fdb9331b5")
+		(uuid "26788501-4c5c-4a44-ad68-4f1f6e18359b")
 	)
 	(wire
 		(pts
-			(xy 181.61 119.38) (xy 189.23 119.38)
+			(xy 181.61 119.38) (xy 203.2 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1351,6 +1361,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 121.92) (xy 222.25 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32da0a70-2fed-4f1e-b88a-2b9ca23e088d")
+	)
+	(wire
+		(pts
 			(xy 148.59 96.52) (xy 148.59 95.25)
 		)
 		(stroke
@@ -1361,13 +1381,13 @@
 	)
 	(wire
 		(pts
-			(xy 254 127) (xy 247.65 127)
+			(xy 196.85 163.83) (xy 203.2 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36a3cf0c-9988-4f17-b160-852d7a9d0608")
+		(uuid "3ad6acb3-206b-4bf6-951d-29f0f6af2e87")
 	)
 	(wire
 		(pts
@@ -1381,7 +1401,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 124.46) (xy 209.55 124.46)
+			(xy 242.57 124.46) (xy 279.4 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1401,13 +1421,43 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 129.54) (xy 189.23 129.54)
+			(xy 171.45 129.54) (xy 203.2 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4afc4a57-808b-44fd-b2b9-101cf4afc69d")
+	)
+	(wire
+		(pts
+			(xy 210.82 129.54) (xy 222.25 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "507602e7-b0c9-4747-b961-486f8fa7cac0")
+	)
+	(wire
+		(pts
+			(xy 210.82 134.62) (xy 222.25 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5940c484-9a7d-47d5-81c8-f53698e54910")
+	)
+	(wire
+		(pts
+			(xy 196.85 134.62) (xy 196.85 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d3333e2-c142-494b-b345-c78c84ebd148")
 	)
 	(wire
 		(pts
@@ -1421,7 +1471,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 148.59) (xy 181.61 148.59)
+			(xy 222.25 148.59) (xy 210.82 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1431,7 +1481,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 156.21) (xy 209.55 156.21)
+			(xy 242.57 156.21) (xy 279.4 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1451,7 +1501,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 156.21) (xy 173.99 156.21)
+			(xy 222.25 156.21) (xy 210.82 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1461,13 +1511,23 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 127) (xy 209.55 127)
+			(xy 242.57 127) (xy 279.4 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6d423184-698d-4868-b56f-417f933b6cc7")
+	)
+	(wire
+		(pts
+			(xy 203.2 148.59) (xy 181.61 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72377217-03ec-4f45-b71e-7feed08b3a9b")
 	)
 	(wire
 		(pts
@@ -1488,16 +1548,6 @@
 			(type default)
 		)
 		(uuid "74db1856-5bf2-45f0-8dee-8d976e3251ba")
-	)
-	(wire
-		(pts
-			(xy 187.96 163.83) (xy 187.96 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76f78f64-d8c4-4445-a22b-0bf2640dbde0")
 	)
 	(wire
 		(pts
@@ -1551,6 +1601,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 127) (xy 222.25 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94af0ace-33ef-43b9-aeb8-a82ebf569a50")
+	)
+	(wire
+		(pts
 			(xy 116.84 116.84) (xy 128.27 116.84)
 		)
 		(stroke
@@ -1558,6 +1618,16 @@
 			(type default)
 		)
 		(uuid "9d1e2cb5-7d64-4e0e-ab6b-f1f53e527f88")
+	)
+	(wire
+		(pts
+			(xy 203.2 151.13) (xy 179.07 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3f3383-5d3c-4c9a-ab18-3159695c139d")
 	)
 	(wire
 		(pts
@@ -1571,7 +1641,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 146.05) (xy 184.15 146.05)
+			(xy 222.25 146.05) (xy 210.82 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1581,7 +1651,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 163.83) (xy 187.96 163.83)
+			(xy 210.82 163.83) (xy 222.25 163.83)
 		)
 		(stroke
 			(width 0)
@@ -1591,7 +1661,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 163.83) (xy 187.96 163.83)
+			(xy 163.83 163.83) (xy 196.85 163.83)
 		)
 		(stroke
 			(width 0)
@@ -1631,7 +1701,17 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 153.67) (xy 209.55 153.67)
+			(xy 203.2 153.67) (xy 176.53 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b07c8f97-3d75-441a-9b9b-4f8eef9ae9cf")
+	)
+	(wire
+		(pts
+			(xy 242.57 153.67) (xy 279.4 153.67)
 		)
 		(stroke
 			(width 0)
@@ -1641,7 +1721,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 158.75) (xy 171.45 158.75)
+			(xy 222.25 158.75) (xy 210.82 158.75)
 		)
 		(stroke
 			(width 0)
@@ -1658,6 +1738,16 @@
 			(type default)
 		)
 		(uuid "b5b10bfb-5031-44ff-a473-ad13ca0bb9f2")
+	)
+	(wire
+		(pts
+			(xy 203.2 161.29) (xy 168.91 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8addb3f-0552-4f26-b7d3-f050b8c2c8b5")
 	)
 	(wire
 		(pts
@@ -1681,16 +1771,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 153.67) (xy 247.65 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3ef6286-e2e6-4614-a168-4b9bde20686c")
-	)
-	(wire
-		(pts
 			(xy 140.97 91.44) (xy 140.97 95.25)
 		)
 		(stroke
@@ -1701,13 +1781,33 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 127) (xy 189.23 127)
+			(xy 203.2 158.75) (xy 171.45 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb92d482-4bad-47a1-b204-25740c79d079")
+	)
+	(wire
+		(pts
+			(xy 173.99 127) (xy 203.2 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cd48e38e-d15b-4ac3-a9c0-3c24e836ff6a")
+	)
+	(wire
+		(pts
+			(xy 203.2 134.62) (xy 196.85 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce723c26-911b-494f-9519-56a7127d8ce7")
 	)
 	(wire
 		(pts
@@ -1721,7 +1821,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 132.08) (xy 189.23 132.08)
+			(xy 168.91 132.08) (xy 203.2 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1731,7 +1831,17 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 121.92) (xy 189.23 121.92)
+			(xy 203.2 116.84) (xy 184.15 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbb1ded7-7ba0-4dd3-a4f5-4ec2446cae2e")
+	)
+	(wire
+		(pts
+			(xy 179.07 121.92) (xy 203.2 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1751,7 +1861,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 124.46) (xy 189.23 124.46)
+			(xy 176.53 124.46) (xy 203.2 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1759,9 +1869,19 @@
 		)
 		(uuid "e56b0800-6246-47ec-a319-53fb414d4127")
 	)
+	(wire
+		(pts
+			(xy 210.82 124.46) (xy 222.25 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc3595b2-1599-45d9-b7b6-8a1d3a58e1e8")
+	)
 	(hierarchical_label "Seconds_ones"
 		(shape input)
-		(at 254 124.46 0)
+		(at 279.4 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1797,7 +1917,7 @@
 	)
 	(hierarchical_label "Minutes_ones"
 		(shape input)
-		(at 254 153.67 0)
+		(at 279.4 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1809,7 +1929,7 @@
 	)
 	(hierarchical_label "Minutes_tens"
 		(shape input)
-		(at 254 156.21 0)
+		(at 279.4 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1857,7 +1977,7 @@
 	)
 	(hierarchical_label "Seconds_tens"
 		(shape input)
-		(at 254 127 0)
+		(at 279.4 127 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1866,6 +1986,75 @@
 			(justify left)
 		)
 		(uuid "b6e21619-0f5b-4453-a31c-080dedd2d61f")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 161.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "029201aa-d16e-4579-b0a7-a4f162c25161")
+		(property "Reference" "R215"
+			(at 204.47 161.036 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 163.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84b61ba0-eb07-4345-bb7f-5a5ea7edbf99")
+		)
+		(pin "2"
+			(uuid "c386154f-8841-454f-8942-afb5640292e5")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R215")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -1928,75 +2117,6 @@
 			(project ""
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
 					(reference "#PWR0201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 243.84 153.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ceb2a7a-51be-4164-aa0b-60e09a36e8f4")
-		(property "Reference" "R203"
-			(at 241.3 153.416 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "470"
-			(at 241.808 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 243.84 155.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 243.84 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c62874ca-babc-484c-a55e-668c29511d28")
-		)
-		(pin "2"
-			(uuid "767758a9-8bf6-4d43-a27c-62c121794be1")
-		)
-		(instances
-			(project "digital_klokke"
-				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
-					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -2070,7 +2190,7 @@
 	)
 	(symbol
 		(lib_id "Optoelectronics:LTD-4608JF")
-		(at 203.2 106.68 0)
+		(at 236.22 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2079,7 +2199,7 @@
 		(fields_autoplaced yes)
 		(uuid "29d9e47d-1dcc-4e84-8cdc-c35e20a8d91b")
 		(property "Reference" "D201"
-			(at 200.66 110.2825 0)
+			(at 233.68 110.2825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,7 +2207,7 @@
 			)
 		)
 		(property "Value" "LTD-4608JF"
-			(at 200.66 112.7068 0)
+			(at 233.68 112.7068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,7 +2215,7 @@
 			)
 		)
 		(property "Footprint" "OMG_Optoelectronics:Lite-On LTD-4608JF"
-			(at 203.2 113.284 0)
+			(at 236.22 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2105,7 +2225,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS30-2001-317/D4608JF.pdf"
-			(at 194.31 149.86 0)
+			(at 227.33 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2115,7 +2235,7 @@
 			)
 		)
 		(property "Description" "Display Modules - LED Character and Numeric Orange-Yellow 7-Segment 2 Character Common Anode 2.05V 20mA 0.504\" H x 0.782\" W x 0.276\" D (12.80mm x 19.86mm x 7.00mm) 10-DIP (0.400\", 10.16mm)"
-			(at 194.31 147.574 0)
+			(at 227.33 147.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2125,7 +2245,7 @@
 			)
 		)
 		(property "digikey_partnumber" "160-1536-5-ND"
-			(at 194.056 140.462 0)
+			(at 227.076 140.462 0)
 			(show_name yes)
 			(effects
 				(font
@@ -2136,7 +2256,7 @@
 			)
 		)
 		(property "Common pin" "Common Anode "
-			(at 194.056 142.748 0)
+			(at 227.076 142.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,7 +2266,7 @@
 			)
 		)
 		(property "Vf" "2.05V "
-			(at 194.31 145.034 0)
+			(at 227.33 145.034 0)
 			(show_name yes)
 			(effects
 				(font
@@ -2190,6 +2310,489 @@
 			(project ""
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
 					(reference "D201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30a3ce9a-b80f-44f9-b014-0c37ea11dd37")
+		(property "Reference" "R208"
+			(at 204.47 134.366 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 136.398 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3eb5db3-0af0-4f83-ab4a-f3410527cd77")
+		)
+		(pin "2"
+			(uuid "e9cf97b9-f7eb-43d2-bbdb-1c0157a5d15a")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40a9ed0f-c2a1-4461-980a-70e466daf440")
+		(property "Reference" "R202"
+			(at 204.47 119.126 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 121.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d8daba6-f4e4-41ad-8074-c747bccc0c3e")
+		)
+		(pin "2"
+			(uuid "922e47db-2160-4306-9d48-06d34ce26a51")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b3fee93-c06f-4d4f-8164-e361cfce6b6e")
+		(property "Reference" "R205"
+			(at 204.47 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 128.778 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "089e47c5-b725-4ef0-8ab8-46ce3689caf6")
+		)
+		(pin "2"
+			(uuid "9de656e4-9588-4995-9831-708e83c55e0e")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5138267a-84cf-4dcd-9b20-86bda0421a2d")
+		(property "Reference" "R209"
+			(at 204.47 145.796 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 147.828 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "768f706e-6173-42f7-9216-d75639115e80")
+		)
+		(pin "2"
+			(uuid "8cd47c8a-a841-418a-91a4-f008ed4513a4")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60e1557c-7d84-495f-90b2-35971656446c")
+		(property "Reference" "R204"
+			(at 204.47 124.206 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 126.238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d2ea275-bf48-4e33-adf7-286fb3317202")
+		)
+		(pin "2"
+			(uuid "d0f9b7d7-e720-462c-bff9-9f3c09383f88")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 153.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "641b1e8a-5888-451a-90d8-279e84f1a126")
+		(property "Reference" "R212"
+			(at 204.47 153.416 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 155.448 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff08e6f5-e109-48da-8cb2-086f5b7bb252")
+		)
+		(pin "2"
+			(uuid "02397051-8d6d-4bef-b2c4-bf32338a1d8d")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "670d6cbd-9332-4df4-94de-a432f0b33df3")
+		(property "Reference" "R201"
+			(at 204.47 116.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 118.618 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "358a23a4-ac04-45e4-907b-56bc2a383456")
+		)
+		(pin "2"
+			(uuid "5c01c3c7-eca5-491a-bb75-a6355100c7c3")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -2375,15 +2978,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 243.84 124.46 90)
+		(at 207.01 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "98496c7d-7d6a-4369-a45c-1c4cb353fd29")
-		(property "Reference" "R201"
-			(at 241.3 124.206 90)
+		(uuid "6dcc0163-3bad-492e-83c7-c35ddb96e6f2")
+		(property "Reference" "R216"
+			(at 204.47 163.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2392,7 +2995,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 241.808 124.46 90)
+			(at 204.978 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,8 +3003,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 243.84 126.238 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 165.608 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2410,7 +3013,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 124.46 0)
+			(at 207.01 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2419,7 +3022,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 243.84 124.46 0)
+			(at 207.01 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2428,15 +3031,291 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc1c55b5-d92f-4e61-af2a-057ab7818d34")
+			(uuid "3290b651-4b88-47a0-84d7-2760a781bf40")
 		)
 		(pin "2"
-			(uuid "572b3a82-9719-43f2-9899-3cad5258a6d9")
+			(uuid "46ae0ca6-95c1-4bc5-bcc0-5d759b8b1d61")
 		)
 		(instances
-			(project ""
+			(project "digital_klokke"
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
-					(reference "R201")
+					(reference "R216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79cc18f8-ef64-4fa7-8415-17ce78bb852c")
+		(property "Reference" "R210"
+			(at 204.47 148.336 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 150.368 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7db8f10-e380-41a8-ad6c-c1afc00f8ca9")
+		)
+		(pin "2"
+			(uuid "183ed0a1-1b10-4a14-820b-35073721c8d4")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8972a753-87bd-4c02-888a-0da709cef6e6")
+		(property "Reference" "R213"
+			(at 204.47 155.956 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 157.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a95c29c7-3043-4fc5-9f3b-9abbe57b18e6")
+		)
+		(pin "2"
+			(uuid "ee193219-9de8-4ddb-a6e4-bd18c4643e90")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95225743-4bf6-4624-b82b-b558d21dd299")
+		(property "Reference" "R207"
+			(at 204.47 131.826 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 133.858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c95523d-5749-4545-8bc5-da8a90d01751")
+		)
+		(pin "2"
+			(uuid "1bc8b5eb-82be-44f0-866c-c0cc3f34dc4e")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "979ef9db-5527-475d-85ae-1474b471bf16")
+		(property "Reference" "R203"
+			(at 204.47 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 123.698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b083cabf-9c31-4fa1-a7d4-5d6daa4c1753")
+		)
+		(pin "2"
+			(uuid "6a0e33b7-8130-41bb-acaa-393c12c791bf")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -2444,7 +3323,7 @@
 	)
 	(symbol
 		(lib_id "Optoelectronics:LTD-4608JF")
-		(at 203.2 135.89 0)
+		(at 236.22 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2453,7 +3332,7 @@
 		(fields_autoplaced yes)
 		(uuid "a46b5144-fe82-492f-a646-594d9fdac60a")
 		(property "Reference" "D202"
-			(at 200.66 139.4925 0)
+			(at 233.68 139.4925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2461,7 +3340,7 @@
 			)
 		)
 		(property "Value" "LTD-4608JF"
-			(at 200.66 141.9168 0)
+			(at 233.68 141.9168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +3348,7 @@
 			)
 		)
 		(property "Footprint" "OMG_Optoelectronics:Lite-On LTD-4608JF"
-			(at 203.2 142.494 0)
+			(at 236.22 142.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,7 +3358,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS30-2001-317/D4608JF.pdf"
-			(at 194.31 179.07 0)
+			(at 227.33 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,7 +3368,7 @@
 			)
 		)
 		(property "Description" "Display Modules - LED Character and Numeric Orange-Yellow 7-Segment 2 Character Common Anode 2.05V 20mA 0.504\" H x 0.782\" W x 0.276\" D (12.80mm x 19.86mm x 7.00mm) 10-DIP (0.400\", 10.16mm)"
-			(at 194.31 176.784 0)
+			(at 227.33 176.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2499,7 +3378,7 @@
 			)
 		)
 		(property "digikey_partnumber" "160-1536-5-ND"
-			(at 194.056 169.672 0)
+			(at 227.076 169.672 0)
 			(show_name yes)
 			(effects
 				(font
@@ -2510,7 +3389,7 @@
 			)
 		)
 		(property "Common pin" "Common Anode "
-			(at 194.056 171.958 0)
+			(at 227.076 171.958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2520,7 +3399,7 @@
 			)
 		)
 		(property "Vf" "2.05V "
-			(at 194.31 174.244 0)
+			(at 227.33 174.244 0)
 			(show_name yes)
 			(effects
 				(font
@@ -2571,15 +3450,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 243.84 127 90)
+		(at 207.01 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bdf4d445-e71f-469d-83f7-5aa03c68ddb3")
-		(property "Reference" "R202"
-			(at 241.3 126.746 90)
+		(uuid "bdf5c9a9-3c9f-42c2-96f1-fbe84baf5730")
+		(property "Reference" "R206"
+			(at 204.47 129.286 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,7 +3467,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 241.808 127 90)
+			(at 204.978 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,8 +3475,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 243.84 128.778 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 131.318 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2606,7 +3485,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 127 0)
+			(at 207.01 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2615,7 +3494,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 243.84 127 0)
+			(at 207.01 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2624,15 +3503,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "107a694d-9c05-4898-ba3c-33ccbc4c3038")
+			(uuid "e01a58c0-a53b-4371-826a-9ab64b2be035")
 		)
 		(pin "2"
-			(uuid "dc9c4a08-425c-4ace-939b-466e723a2ca3")
+			(uuid "76a0f289-a579-4757-bbb7-be29a6fcf0c9")
 		)
 		(instances
 			(project "digital_klokke"
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
-					(reference "R202")
+					(reference "R206")
 					(unit 1)
 				)
 			)
@@ -2640,15 +3519,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 243.84 156.21 90)
+		(at 207.01 151.13 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c157a5cf-f3f6-4549-afe9-ec65a67eb36e")
-		(property "Reference" "R204"
-			(at 241.3 155.956 90)
+		(uuid "c0d0b5d8-470d-425a-93ac-c3b06e65d801")
+		(property "Reference" "R211"
+			(at 204.47 150.876 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2657,7 +3536,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 241.808 156.21 90)
+			(at 204.978 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2665,8 +3544,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 243.84 157.988 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 152.908 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,7 +3554,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 156.21 0)
+			(at 207.01 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2684,7 +3563,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 243.84 156.21 0)
+			(at 207.01 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2693,15 +3572,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "54862c81-7cc5-4be4-a3c4-7783b82a985f")
+			(uuid "aa672be9-bac6-426e-be6a-5a5242446aaf")
 		)
 		(pin "2"
-			(uuid "9c6c7fe4-3cb8-4efb-83c6-4be6a2ab7eff")
+			(uuid "090f6ad7-956e-415d-a806-bacb87361477")
 		)
 		(instances
 			(project "digital_klokke"
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
-					(reference "R204")
+					(reference "R211")
 					(unit 1)
 				)
 			)
@@ -2768,6 +3647,75 @@
 			(project "digital_klokke"
 				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
 					(reference "#PWR0203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c849315a-18a2-4b6b-865d-6e5a715a9fea")
+		(property "Reference" "R214"
+			(at 204.47 158.496 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "470"
+			(at 204.978 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 207.01 160.528 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17c736ce-1a66-456a-9156-38221faf3666")
+		)
+		(pin "2"
+			(uuid "d5f7450d-680f-4796-8fd1-1eed72274f09")
+		)
+		(instances
+			(project "digital_klokke"
+				(path "/6b4a72f0-cc5e-47cc-a8b7-5fa4d52808a8/b91ffd06-f5ff-44b3-981a-676440eedbd6"
+					(reference "R214")
 					(unit 1)
 				)
 			)
