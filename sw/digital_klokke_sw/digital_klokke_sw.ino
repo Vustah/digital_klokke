@@ -30,8 +30,8 @@ SegmentState segment_state = m_ones;
 // unsigned char segment_state = m_ones;
 
 int second_counter = 0;
-int minute_counter = 27;
-int hour_counter = 17;
+int minute_counter = 4;
+int hour_counter = 18;
 int prev_time;
 int current_time;
 bool config_led_state = true;
@@ -117,7 +117,7 @@ write_time(hour_counter, minute_counter, second_counter);
 void seconds_counter() {
   config_led_state = !(config_led_state);
   if (config_led_state) {
-    analogWrite(config_led, 240);
+    analogWrite(config_led, 245);
   } else {
     analogWrite(config_led, 255);
   }
