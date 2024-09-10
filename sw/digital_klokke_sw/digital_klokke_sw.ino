@@ -1,9 +1,9 @@
 #include "Button2.h"
 
-#define Second_ones 8
-#define Second_tens 6
-#define Minute_ones 9
-#define Minute_tens 7
+#define Second_ones 7
+#define Second_tens 9
+#define Minute_ones 6
+#define Minute_tens 8
 #define config_led 10
 #define increase_time A0
 #define decrease_time A1
@@ -30,8 +30,8 @@ SegmentState segment_state = m_ones;
 // unsigned char segment_state = m_ones;
 
 int second_counter = 0;
-int minute_counter = 30;
-int hour_counter = 19;
+int minute_counter = 27;
+int hour_counter = 17;
 int prev_time;
 int current_time;
 bool config_led_state = true;
@@ -66,7 +66,11 @@ int time_difference;
 int acumulated_time_difference;
 
 void loop() {
-  write_time(hour_counter, minute_counter, second_counter);
+  track_time();
+}
+
+void track_time(){
+write_time(hour_counter, minute_counter, second_counter);
 
   delay(5);
   current_time = millis();
@@ -113,7 +117,6 @@ void loop() {
     Serial.println(second_counter);
   }
 }
-
 
 void seconds_counter() {
   config_led_state = !(config_led_state);
