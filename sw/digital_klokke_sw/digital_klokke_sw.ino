@@ -38,10 +38,6 @@ bool config_led_state = true;
 
 
 void setup() {
-  // pinMode(A, OUTPUT);
-  // pinMode(B, OUTPUT);
-  // pinMode(C, OUTPUT);
-  // pinMode(D, OUTPUT);
   for (int i = 0; i < 4; i++) {
     pinMode(SegBit[i], OUTPUT);
   }
