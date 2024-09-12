@@ -29,9 +29,16 @@ enum SegmentState { h_ones,
 SegmentState segment_state = m_ones;
 // unsigned char segment_state = m_ones;
 
+enum adjustButtonState {
+  normal,
+  clicked
+};
+
+adjustButtonState buttonState = normal;
+
 int second_counter = 0;
-int minute_counter = 4;
-int hour_counter = 18;
+int minute_counter = 29;
+int hour_counter = 16;
 int prev_time;
 int current_time;
 bool config_led_state = true;
@@ -56,23 +63,54 @@ void setup() {
   increase_btn.begin(increase_pin);
   decrease_btn.begin(decrease_pin);
   adjust_btn.begin(adjust_pin);
+  adjust_btn.setTapHandler(pressed);
 }
 
+
+
+void loop() {
+  switch (buttonState) {
+    case normal:
+      track_time();
+      // if (adjust_btn.isPressed()) {
+      //   buttonState = adjust;
+      // }
+      break;
+    case adjust:
+      second_counter = 58;
+      write_time(hour_counter, minute_counter, second_counter);
+
+      if (adjust_btn.isPressed()) {
+        buttonState = normal;
+      }
+      break;
+    default:
+      buttonState = normal;
+      break;
+  }
+}
+
+void pressed(Button2& btn) {
+  Serial.println("tap");
+}
+
+int display_time_difference = 0;
+int prev_display_time = 0;
 int time_difference;
 int acumulated_time_difference;
 
-void loop() {
-  track_time();
-}
 
-void track_time(){
-write_time(hour_counter, minute_counter, second_counter);
-
-  delay(5);
+void track_time() {
   current_time = millis();
-  time_difference = current_time - prev_time;
+  
+  display_time_difference = current_time - prev_display_time;
+  if (display_time_difference > 5) {
+    write_time(hour_counter, minute_counter, second_counter);
+    prev_display_time = current_time;
+  }
 
-  if (time_difference >= 999) {
+  time_difference = current_time - prev_time;
+  if (time_difference >= 1000) {
     prev_time = current_time;
     second_counter += 1;
 
@@ -117,7 +155,7 @@ write_time(hour_counter, minute_counter, second_counter);
 void seconds_counter() {
   config_led_state = !(config_led_state);
   if (config_led_state) {
-    analogWrite(config_led, 245);
+    analogWrite(config_led, 250);
   } else {
     analogWrite(config_led, 255);
   }
