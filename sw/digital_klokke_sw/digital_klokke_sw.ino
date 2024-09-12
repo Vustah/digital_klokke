@@ -5,11 +5,9 @@
 #define Minute_ones 6
 #define Minute_tens 8
 #define config_led 10
-#define increase_time A1
-#define decrease_time A0
-#define adjust A2
-#define increase_pin A0
-#define decrease_pin A1
+
+#define decrease_pin A0
+#define increase_pin A1
 #define adjust_pin A2
 
 Button2 increase_btn;
@@ -37,11 +35,17 @@ enum adjustButtonState {
 adjustButtonState buttonState = normal;
 
 int second_counter = 0;
-int minute_counter = 55;
-int hour_counter = 16;
-int prev_time;
+int minute_counter = 1;
+int hour_counter = 17;
 int current_time;
 bool config_led_state = true;
+
+int acumulated_time_difference;
+int time_difference;
+int prev_time;
+
+int display_time_difference = 0;
+int prev_display_time = 0;
 
 
 void setup() {
@@ -52,22 +56,20 @@ void setup() {
   pinMode(Second_tens, OUTPUT);
   pinMode(Minute_ones, OUTPUT);
   pinMode(Minute_tens, OUTPUT);
-  pinMode(increase_time, INPUT);
-  pinMode(decrease_time, INPUT);
-  pinMode(adjust, INPUT);
   pinMode(config_led, OUTPUT);
 
   prev_time = millis();
   Serial.begin(115200);
 
-  increase_btn.begin(increase_pin);
-  decrease_btn.begin(decrease_pin);
   adjust_btn.begin(adjust_pin);
   adjust_btn.setTapHandler(pressed);
+
+  increase_btn.begin(increase_pin);
   increase_btn.setTapHandler(increase_time_func);
+
+  decrease_btn.begin(decrease_pin);
   decrease_btn.setTapHandler(decrease_time_func);
 }
-
 
 
 void loop() {
@@ -77,7 +79,7 @@ void loop() {
       track_time(current_time);
       break;
 
-    case adjust:
+    case clicked:
       second_counter = 58;
 
       write_time(hour_counter, minute_counter, second_counter, current_time);
@@ -94,11 +96,12 @@ void loop() {
 void pressed(Button2& btn) {
   switch (buttonState) {
     case normal:
-      buttonState = adjust;
+      buttonState = clicked;
       break;
-    case adjust:
+    case clicked:
       buttonState = normal;
       second_counter = 0;
+      acumulated_time_difference = 0;
       break;
     default:
       buttonState = normal;
@@ -107,26 +110,28 @@ void pressed(Button2& btn) {
 }
 
 void increase_time_func(Button2& btn) {
-  if (buttonState = adjust) { minute_counter += 1; }
+  switch (buttonState) {
+    case clicked:
+      minute_counter += 1;
+      break;
+  }
 }
 
 void decrease_time_func(Button2& btn) {
-  if (buttonState = adjust) { minute_counter -= 1;}
+  switch (buttonState) {
+    case clicked:
+      minute_counter -= 1;
+      break;
+  }
 }
 
 
-int time_difference;
-int acumulated_time_difference;
+
 
 void track_time(int current_time) {
   // current_time = millis();
 
   write_time(hour_counter, minute_counter, second_counter, current_time);
-  // display_time_difference = current_time - prev_display_time;
-  // if (display_time_difference > 5) {
-  //   write_time(hour_counter, minute_counter, second_counter);
-  //   prev_display_time = current_time;
-  // }
 
   time_difference = current_time - prev_time;
   if (time_difference >= 1000) {
@@ -190,12 +195,10 @@ void send_number_to_converter(int number[4]) {
 }
 
 
-int display_time_difference = 0;
-int prev_display_time = 0;
 
 void write_time(int hour, int minute, int second, int current_time) {
   display_time_difference = current_time - prev_display_time;
-  if (display_time_difference > 5) {
+  if (display_time_difference > 3) {
     write_time(hour_counter, minute_counter, second_counter);
     prev_display_time = current_time;
   }
