@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Optoelectronics")(type "KiCad")(uri "${KIPRJMOD}/sym/Optoelectronics.kicad_sym")(options "")(descr ""))
+)
