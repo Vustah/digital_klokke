@@ -35,8 +35,8 @@ enum adjustButtonState {
 adjustButtonState buttonState = normal;
 
 int second_counter = 0;
-int minute_counter = 1;
-int hour_counter = 17;
+int minute_counter = 53;
+int hour_counter = 20;
 int current_time;
 bool config_led_state = true;
 
@@ -113,6 +113,10 @@ void increase_time_func(Button2& btn) {
   switch (buttonState) {
     case clicked:
       minute_counter += 1;
+      if (minute_counter >=60){
+        hour_counter += 1;
+        minute_counter = 0;
+      }
       break;
   }
 }
@@ -121,6 +125,10 @@ void decrease_time_func(Button2& btn) {
   switch (buttonState) {
     case clicked:
       minute_counter -= 1;
+      if (minute_counter < 0){
+        hour_counter -= 1;
+        minute_counter = 59;
+      }
       break;
   }
 }
