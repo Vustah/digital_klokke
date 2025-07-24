@@ -1,0 +1,3 @@
+default:
+  image: ghcr.io/inti-cmnb/kicad9_auto:latest
+
